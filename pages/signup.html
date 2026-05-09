@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Login - LearnHub</title>
+  <title>Signup - LearnHub</title>
   <link rel="stylesheet" href="../cssFile/globalStyles.css">
-  
+
 </head>
 
 <body>
@@ -32,24 +32,27 @@
 
 <div class="page">
 
-  <h2>Login</h2>
-
-  <img src="../sources/img5.png" width="120">
+  <h2>Create Account</h2>
 
   <div class="form-container">
-    <form onsubmit="return validateLogin()">
+    <form>
+
+      <div>
+        <label>Name</label>
+        <input type="text">
+      </div>
 
       <div>
         <label>Email</label>
-        <input type="email" id="email">
+        <input type="email">
       </div>
 
       <div>
         <label>Password</label>
-        <input type="password" id="password">
+        <input type="password">
       </div>
 
-      <button type="submit">Login</button>
+      <button>Sign Up</button>
 
     </form>
   </div>
@@ -91,7 +94,8 @@
 
 </div>
 </footer>
-<script src="../jsFile/jsFunctions.js"></script>
+
+ <script src="../jsFile/jsFunctions.js"></script>
 
 </body>
 </html>

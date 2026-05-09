@@ -1,66 +1,150 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Dashboard</title>
+  <title>Dashboard - LearnHub</title>
   <link rel="stylesheet" href="../cssFile/globalStyles.css">
+  
 </head>
 
 <body>
 
+
+
 <nav>
-  <h2>Dashboard</h2>
-  <ul>
-    <li><a href="../index.html">Home</a></li>
-    <li><a href="courses.html">Courses</a></li>
-    <li><a href="profile.html">Profile</a></li>
-  </ul>
+
+<h2>LearnHub</h2>
+
+<span class="menu-toggle" onclick="toggleMenu()">☰</span>
+
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="courses.html">Courses</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="dashboard.html">Dashboard</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="login.html">Login</a></li>
+<li><button onclick="toggleTheme()">🌙</button></li>
+</ul>
+
 </nav>
+
+
 
 <div class="page">
 
-<h2>My Learning Progress</h2>
+ <div class="page">
 
-<div class="table-container">
+  <h2>Dashboard Overview</h2>
 
-<table style="min-width:600px; max-width:900px;">
+  <!-- STATS -->
+  <div class="card-container">
 
-  <thead>
-    <tr>
-      <th>Course</th>
-      <th>Status</th>
-      <th>Progress</th>
-    </tr>
-  </thead>
+    <div class="card">
+      <img src="../sources/img1.png">
+      <h3>3</h3>
+      <p>Courses Enrolled</p>
+    </div>
 
-  <tbody>
-    <tr>
-      <td>HTML Basics</td>
-      <td>Completed</td>
-      <td>100%</td>
-    </tr>
+    <div class="card">
+      <img src="../sources/img2.png">
+      <h3>1</h3>
+      <p>Completed</p>
+    </div>
 
-    <tr>
-      <td>CSS Mastery</td>
-      <td>In Progress</td>
-      <td>60%</td>
-    </tr>
+    <div class="card">
+      <img src="../sources/img3.png">
+      <h3>2</h3>
+      <p>In Progress</p>
+    </div>
 
-    <tr>
-      <td>JavaScript</td>
-      <td>Not Started</td>
-      <td>0%</td>
-    </tr>
-  </tbody>
+  </div>
 
-</table>
+  <h2>My Courses</h2>
+
+  <!-- FILTER -->
+  <button onclick="filterCourses('all')">All</button>
+  <button onclick="filterCourses('completed')">Completed</button>
+  <button onclick="filterCourses('progress')">In Progress</button>
+
+  <div class="table-container">
+
+    <table style="min-width:600px; max-width:1000px;" id="courseTable">
+
+      <thead>
+        <tr>
+          <th>Course</th>
+          <th>Instructor</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <tr data-status="completed">
+          <td>Web Development</td>
+          <td>John</td>
+          <td>Completed</td>
+        </tr>
+
+        <tr data-status="progress">
+          <td>Java Programming</td>
+          <td>Smith</td>
+          <td>In Progress</td>
+        </tr>
+
+        <tr data-status="progress">
+          <td>Database Systems</td>
+          <td>Ali</td>
+          <td>In Progress</td>
+        </tr>
+
+      </tbody>
+
+    </table>
+
+  </div>
 
 </div>
 
 </div>
 
-<button onclick="toggleTheme()">Theme</button>
+<footer>
+  <p>LearnHub © 2026</p>
 
-<script src="../jsFile/jsFunctions.js"></script>
+<div class="footer-container">
+
+  <!-- CONTACTS COLUMN -->
+  <div>
+
+    <h3 style="text-decoration: underline;">Contacts</h3>
+
+    <p>📞 0312-4567891</p>
+    <p>📞 0336-7894512</p>
+    <p>📧 support@learnhub.com</p>
+
+    <a href="#">Facebook</a><br>
+    <a href="#">Twitter</a><br>
+    <a href="#">Email</a>
+
+  </div>
+
+  <!-- HELP COLUMN -->
+  <div>
+
+    <h3 style="text-decoration: underline;">Help</h3>
+
+    <p>Press</p>
+    <p>Investors</p>
+    <p>Terms</p>
+    <p>Privacy</p>
+    <p>Accessibility</p>
+
+  </div>
+
+</div>
+</footer>
+
+ <script src="../jsFile/jsFunctions.js"></script>
 
 </body>
 </html>

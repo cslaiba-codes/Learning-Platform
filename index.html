@@ -1,60 +1,104 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Learning Platform</title>
+  <title>LearnHub</title>
   <link rel="stylesheet" href="cssFile/globalStyles.css">
+
 </head>
 
 <body>
 
 <nav>
-  <h2>LearnHub</h2>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="pages/courses.html">Courses</a></li>
-    <li><a href="pages/about.html">About</a></li>     <!-- ADD THIS -->
-    <li><a href="pages/contact.html">Contact</a></li> <!-- ADD THIS -->
-    <li><a href="pages/login.html">Login</a></li>
 
-  </ul>
+<h2>LearnHub</h2>
+
+<span class="menu-toggle" onclick="toggleMenu()">☰</span>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="pages/courses.html">Courses</a></li>
+<li><a href="pages/services.html">Services</a></li>
+<li><a href="pages/dashboard.html">Dashboard</a></li>
+<li><a href="pages/contact.html">Contact</a></li>
+<li><a href="pages/login.html">Login</a></li>
+<li><button onclick="toggleTheme()">🌙</button></li>
+</ul>
+
 </nav>
 
 
+
+<!-- PAGE -->
 <div class="page">
 
-<h2>Explore Courses</h2>
+  <h1>Welcome to LearnHub</h1>
+  <p>Your smart learning platform for modern education.</p>
 
-<div class="card-container">
+  <div class="card-container">
 
-  <div class="card">
-    <img src="sources/image1.png" alt="Web Development">
-    <h3>Web Development</h3>
-    <p>Learn HTML, CSS, and JavaScript</p>
-  </div>
+    <div class="card">
+      <img src="sources/img1.png">
+      <h3>Courses</h3>
+      <p>Explore professional courses</p>
+      <button onclick="location.href='pages/courses.html'">Explore</button>
+    </div>
 
-  <div class="card">
-    <img src="sources/image2.png" alt="Python Programming">
-    <h3>Python Programming</h3>
-    <p>Start from basics to advanced level</p>
-  </div>
+    <div class="card">
+      <img src="sources/img2.png">
+      <h3>Dashboard</h3>
+      <p>Track your progress</p>
+      <button onclick="location.href='pages/dashboard.html'">Open</button>
+    </div>
 
-  <div class="card">
-    <img src="sources/image3.png" alt="Artificial Intelligence">
-    <h3>AI Basics</h3>
-    <p>Introduction to Artificial Intelligence</p>
+    <div class="card">
+      <img src="sources/img3.png">
+      <h3>Contact</h3>
+      <p>Get in touch with us</p>
+      <button onclick="location.href='pages/contact.html'">Contact</button>
+    </div>
+
   </div>
 
 </div>
-
-</div>
-
-<button onclick="toggleTheme()">Theme</button>
 
 <footer>
-  <p>© 2026 Learning Platform</p>
+
+  <p>© 2026 LearnHub. All rights reserved.</p>
+
+<div class="footer-container">
+
+  <!-- CONTACTS COLUMN -->
+  <div>
+
+    <h3 style="text-decoration: underline;">Contacts</h3>
+
+    <p>📞 0312-4567891</p>
+    <p>📞 0336-7894512</p>
+    <p>📧 support@learnhub.com</p>
+
+    <a href="#">Facebook</a><br>
+    <a href="#">Twitter</a><br>
+    <a href="#">Email</a>
+
+  </div>
+
+  <!-- HELP COLUMN -->
+  <div>
+
+    <h3 style="text-decoration: underline;">Help</h3>
+
+    <p>Press</p>
+    <p>Investors</p>
+    <p>Terms</p>
+    <p>Privacy</p>
+    <p>Accessibility</p>
+
+  </div>
+
+</div>
 </footer>
 
-<script src="jsFile/jsFunctions.js"></script>
+  <script src="jsFile/jsFunctions.js"></script>
 
 </body>
 </html>

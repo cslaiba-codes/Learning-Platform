@@ -1,44 +1,153 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Contact</title>
+  <title>Contact Us - LearnHub</title>
+
   <link rel="stylesheet" href="../cssFile/globalStyles.css">
+
+ 
 </head>
 
 <body>
 
+
+
 <nav>
-  <h2>Contact</h2>
-  <ul>
-    <li><a href="../index.html">Home</a></li>
-    <li><a href="services.html">Services</a></li>
-  </ul>
+
+<h2>LearnHub</h2>
+
+<span class="menu-toggle" onclick="toggleMenu()">☰</span>
+
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="courses.html">Courses</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="dashboard.html">Dashboard</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="login.html">Login</a></li>
+<li><button onclick="toggleTheme()">🌙</button></li>
+</ul>
+
 </nav>
+
+
 
 <div class="page">
 
-<h2>Contact Us</h2>
+<h1>Contact Us</h1>
 
-<div class="form-container">
+<img src="../sources/img3.png" width="120">
 
-  <label>Name</label>
-  <input type="text" placeholder="Enter your name">
+<p>
+We would love to hear from you. Reach out to LearnHub for
+course guidance, technical support, or learning assistance.
+</p>
 
-  <label>Email</label>
-  <input type="text" placeholder="Enter your email">
+<div class="card-container">
 
-  <label>Message</label>
-  <textarea placeholder="Write your message"></textarea>
+<!-- CONTACT CARD -->
+<div class="card">
 
-  <button>Send Message</button>
+<img src="../sources/img3.png">
+
+<h3>Get In Touch</h3>
+
+<p>
+Our support team is available to help students regarding
+courses, registration, and platform services.
+</p>
+
+<h4>Phone Numbers</h4>
+
+<p>03124567891</p>
+<p>03367894512</p>
+
+<h4>Email</h4>
+
+<p>support@learnhubacademy.com</p>
+
+<h4>Follow Us</h4>
+
+<a href="#">📘 Facebook</a>
+<a href="#">🐦 Twitter</a>
+<a href="#">📸 Instagram</a>
+
+</div>
+
+<!-- CONTACT FORM -->
+<div class="card">
+
+<img src="../sources/img7.png">
+
+<h3>Send Message</h3>
+
+<form onsubmit="alert('Message Sent Successfully')">
+
+<div>
+<label>Name</label>
+<input type="text">
+</div>
+
+<div>
+<label>Email</label>
+<input type="email">
+</div>
+
+<div>
+<label>Message</label>
+<textarea></textarea>
+</div>
+
+<button type="submit">Send</button>
+
+</form>
 
 </div>
 
 </div>
 
-<button onclick="toggleTheme()">Theme</button>
+</div>
 
-<script src="../jsFile/jsFunctions.js"></script>
+<footer>
+
+<p>LearnHub © 2026</p>
+
+<div class="footer-container">
+
+  <!-- CONTACTS COLUMN -->
+  <div>
+
+    <h3 style="text-decoration: underline;">Contacts</h3>
+
+    <p>📞 0312-4567891</p>
+    <p>📞 0336-7894512</p>
+    <p>📧 support@learnhub.com</p>
+
+    <a href="#">Facebook</a><br>
+    <a href="#">Twitter</a><br>
+    <a href="#">Email</a>
+
+  </div>
+
+  <!-- HELP COLUMN -->
+  <div>
+
+    <h3 style="text-decoration: underline;">Help</h3>
+
+    <p>Press</p>
+    <p>Investors</p>
+    <p>Terms</p>
+    <p>Privacy</p>
+    <p>Accessibility</p>
+
+  </div>
+
+</div>
+
+</footer>
+
+ <script src="../jsFile/jsFunctions.js"></script>
 
 </body>
 </html>
