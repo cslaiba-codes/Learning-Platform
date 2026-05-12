@@ -6,27 +6,11 @@
 
 </head>
 
+
+
 <body>
 
-<nav>
-
-<h2>LearnHub</h2>
-
-<span class="menu-toggle" onclick="toggleMenu()">☰</span>
-
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="pages/courses.html">Courses</a></li>
-<li><a href="pages/services.html">Services</a></li>
-<li><a href="pages/dashboard.html">Dashboard</a></li>
-<li><a href="pages/contact.html">Contact</a></li>
-<li><a href="pages/login.html">Login</a></li>
-<li><a href="pages/signup.html">Signup</a></li>
-<li><button onclick="toggleTheme()">🌙</button></li>
-</ul>
-
-</nav>
-
+<div id="navbar"></div>
 
 <header class="hero"></header>
 
@@ -168,6 +152,22 @@
 </footer>
 
   <script src="jsFile/jsFunctions.js"></script>
+
+
+  <!-- Load Navbar -->
+  <script>
+    
+fetch("pages/navbar.html")
+.then(response => response.text())
+.then(data => {
+  document.getElementById("navbar").innerHTML = data;
+});
+</script>
+
+<script src="jsFile/jsFunctions.js">
+
+</script>
+
 
 </body>
 </html>

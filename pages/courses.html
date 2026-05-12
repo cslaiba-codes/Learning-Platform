@@ -11,24 +11,7 @@
 
 
 
-<nav>
-
-<h2>LearnHub</h2>
-
-<span class="menu-toggle" onclick="toggleMenu()">☰</span>
-
-<ul>
-<li><a href="../index.html">Home</a></li>
-<li><a href="courses.html">Courses</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="dashboard.html">Dashboard</a></li>
-<li><a href="contact.html">Contact</a></li>
-<li><a href="login.html">Login</a></li>
-<li><a href="signup.html">Signup</a></li>
-<li><button onclick="toggleTheme()">🌙</button></li>
-</ul>
-
-</nav>
+<div id="navbar"></div>
 
 
 
@@ -246,6 +229,18 @@ focused on user experience and accessibility.
 </div>
 </footer>
  <script src="../jsFile/jsFunctions.js"></script>
+
+
+
+ <script>
+fetch("navbar.html")
+.then(response => response.text())
+.then(data => {
+  document.getElementById("navbar").innerHTML = data;
+});
+</script>
+
+<script src="../jsFile/jsFunctions.js"></script>
 
 </body>
 </html>
