@@ -78,16 +78,16 @@
 <script src="../jsFile/jsFunctions.js"></script>
 
 
-
+<!-- Load Navbar -->
 <script>
-fetch("navbar.html")
+fetch("/pages/navbar.html")
 .then(response => response.text())
 .then(data => {
   document.getElementById("navbar").innerHTML = data;
 });
 </script>
 
-<script src="../jsFile/jsFunctions.js"></script>
+<script src="/jsFile/jsFunctions.js"></script>
 
 </body>
 </html>
